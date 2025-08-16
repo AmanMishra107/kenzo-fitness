@@ -211,6 +211,9 @@ header {
     width: 100%;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    /* For Safari */
 }
 
 nav {
@@ -409,6 +412,9 @@ nav {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+    .btn-started {
+        display: none;
+    }
 }
 
 
@@ -486,6 +492,9 @@ nav {
     .mobile-menu .btn-started {
         width: 180px;
         padding: 12px 25px;
+    }
+    .btn-started {
+        display: none;
     }
     .hamburger {
         width: 25px;
@@ -1315,7 +1324,7 @@ nav {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 3rem;
-        top: 28%;
+        top: 30%;
         padding: 0 20px;
     }
     .fitness-model {
@@ -6281,4 +6290,163 @@ footer::before {
     background: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Tablet Responsive */
+
+@media (max-width: 1024px) {
+    .modal-content {
+        margin: 15px auto;
+        max-width: 95%;
+    }
+    .modal-header {
+        padding: 25px 20px;
+    }
+    .modal-header h2 {
+        font-size: 2rem;
+    }
+    .modal-body {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    .contact-info-section {
+        min-width: 250px;
+    }
+    .contact-form {
+        min-width: 250px;
+    }
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .contact-modal {
+        padding: 5px;
+    }
+    .modal-content {
+        margin: 10px auto;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    .modal-header {
+        padding: 20px 15px;
+        flex-direction: row;
+        text-align: left;
+    }
+    .modal-header h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+    .close-modal {
+        font-size: 1.8rem;
+    }
+    .modal-body {
+        padding: 25px 15px;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .contact-info-section,
+    .contact-form {
+        min-width: 100%;
+        flex: none;
+    }
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+    .contact-text h4 {
+        font-size: 1.1rem;
+    }
+    .contact-text p {
+        font-size: 0.9rem;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+}
+
+
+/* Small Mobile Responsive */
+
+@media (max-width: 480px) {
+    .modal-header {
+        padding: 15px 12px;
+    }
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+    .close-modal {
+        font-size: 1.6rem;
+    }
+    .modal-body {
+        padding: 20px 12px;
+        gap: 20px;
+    }
+    .contact-info-item {
+        margin-bottom: 15px;
+    }
+    .contact-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .contact-text h4 {
+        font-size: 1rem;
+    }
+    .contact-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        border-radius: 25px;
+    }
+}
+
+
+/* Landscape Mobile */
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .modal-content {
+        margin: 5px auto;
+    }
+    .modal-header {
+        padding: 15px;
+    }
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
+    .modal-body {
+        padding: 20px 15px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .contact-info-section,
+    .contact-form {
+        min-width: calc(50% - 10px);
+    }
 }
