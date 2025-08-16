@@ -10,7 +10,7 @@
 ##  Live Demo
 
 Experience the site in action:  
-**[kenzo-fitness.vercel.app](https://kenzo-fitness.vercel.app/)** :contentReference[oaicite:0]{index=0}
+**[kenzo-fitness](https://kenzo-fitness.vercel.app/)** 
 
 ---
 
